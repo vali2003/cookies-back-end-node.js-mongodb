@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Popup Window</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="popupWindow" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Welcome!</h2>
+        <p>Please fill in your details:</p>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email (Gmail)" required>
+            <input type="tel" id="mobile" placeholder="Mobile Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <button id="okButton" class="btn" style="display:none;">OK</button> <!-- Hide OK button initially -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
